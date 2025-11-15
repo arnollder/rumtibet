@@ -68,3 +68,15 @@ a {
 .header__special-item {
     padding-left: 25px;
 }
+
+
+
+h1 {
+    padding-top: 463px;
+    font-family: 'NEXT_ART';
+    color: var(--white);
+}
+
+.h1__span {
+    white-space: nowrap;
+}
