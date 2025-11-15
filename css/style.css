@@ -1,0 +1,70 @@
+/* ======================== */
+    /* Шрифты */
+/* ======================== */
+
+@import url(fonts.css);
+
+/* ======================== */
+    /* Переменные */
+/* ======================== */
+
+:root {
+    --white: rgba(253, 253, 253, 1);
+    --dark-slate-gray: rgba(26, 62, 62, 1);
+}
+
+/* ======================== */
+    /* Общие стили */
+/* ======================== */
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Nunito-Sans';
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.background {
+    height: 100vh;
+    overflow: auto;
+    background-image: url(../img/Rectangle\ 1.jpg);
+}
+
+.btn-slate {
+    background-color: var(--dark-slate-gray);
+    padding: 12px 24px;
+}
+
+/* ======================== */
+    /* header */
+/* ======================== */
+
+.container {
+    margin: auto;
+    width: 1180px;
+}
+
+.header{
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__menu {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    column-gap: 24px;
+    font-weight: 600;
+}
+
+.header__special-item {
+    padding-left: 25px;
+}
