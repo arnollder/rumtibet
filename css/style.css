@@ -257,8 +257,9 @@ h1 {
     column-gap: 24px;
 
     background-color: var(--white);
-
     border-radius: 10px;
+
+    cursor: pointer;
 }
 
 .travel__img {
