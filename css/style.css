@@ -273,7 +273,15 @@ h1 {
     font-size: 14px;
 }
 
+.travel__article {
+    display: flex;
+    flex-direction: column;
+    min-height: 280px;
+}
+
 .travel-bottom {
+    margin-top: auto; /* прижимает к низу */
+
     display: flex;
     align-items: center;
     justify-content: space-between;
