@@ -93,39 +93,47 @@ h1 {
 .find-program {
     margin-top: 41px;
     padding: 40px ;
+    
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    column-gap: 24px;
+    
     background: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
 }
 
 .find-program__el {
-    display: grid;
+    /* display: grid; */
     row-gap: 8px;
-    width: 270px;
 }
 
 .find-program__input {
     width: 100%;
     padding: 14px 16px;
+
     background-color: transparent;
+
     border: 1px solid var(--border-input);
     border-radius: 8px;
+
     font-family: 'Nunito-Sans';
     font-size: 16px;
     font-weight: 700;
     color: var(--white);
+
     outline: none;
     cursor: pointer;
-    /* стилизация значка */
+
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
 }
 
-.find-program__custom {
+.find-program__pin {
     position: relative;
 }
 
-.find-program__custom::before {
+.find-program__pin::before {
     content: '';
 
     position: absolute;
@@ -138,11 +146,27 @@ h1 {
     height: 20px;
 
     background-image: url(../img/check_mark.svg);
-    /* width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 7px 7px 0 7px;
-    border-color: var(--white) transparent transparent transparent; */
+
+    pointer-events: none;
+}
+
+.find-program__calendar {
+    position: relative;
+}
+
+.find-program__calendar::before {
+    content: '';
+
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+
+    display: block;
+    width: 20px;
+    height: 20px;
+
+    background-image: url(../img/calendar.svg);
 
     pointer-events: none;
 }
@@ -153,7 +177,15 @@ h1 {
 }
 
 .find-program__labels {
-    padding: 0 8px;
+    padding: 8px;
     color: var(--white);
     font-size: 14px;
+}
+
+.btn-white {
+    padding: 16px 36px;
+    border-radius: 4px;
+
+    background-color: var(--white);
+    color: black;
 }
