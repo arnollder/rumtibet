@@ -273,15 +273,20 @@ h1 {
 }
 
 .travel__p {
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* количество строк */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    
     margin-top: 24px;
-
+    
     font-size: 14px;
 }
 
 .travel__article {
     display: flex;
     flex-direction: column;
-    min-height: 280px;
+
 }
 
 .travel-bottom {
