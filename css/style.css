@@ -15,6 +15,7 @@
     --border-input: rgba(225, 227, 228, 1);
     --background-silver: rgba(243, 245, 244, 1);
     --gold: rgba(242, 190, 34, 1);
+    --aquamarine: rgba(26, 62, 62, 1)
 }
 
 /* ======================== */
@@ -249,4 +250,43 @@ h1 {
 
     display: flex;
     column-gap: 24px;
+
+    background-color: var(--white);
+
+    border-radius: 10px;
+}
+
+.travel__img {
+    border-radius: 6px;
+}
+
+.travel__h4 {
+    margin-top: 16px;
+
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.travel__p {
+    margin-top: 24px;
+
+    font-size: 14px;
+}
+
+.travel-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.travel__date {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--gold);
+}
+
+.travel__cont {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--aquamarine);
 }
