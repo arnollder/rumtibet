@@ -182,10 +182,17 @@ h1 {
     font-size: 14px;
 }
 
-.btn-white {
+.find-program__btn {
+    width: 213px;
+    height: 52px;
+    
     padding: 16px 36px;
     border-radius: 4px;
 
     background-color: var(--white);
     color: black;
+
+    box-sizing: border-box;
+
+    font-size: 16px;
 }
