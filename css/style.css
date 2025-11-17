@@ -240,6 +240,8 @@ h1 {
 /* ======================== */
 
 .travel {
+    margin-bottom: 50px;
+
     display: grid;
     grid-template-columns: repeat(2, 580px);
     grid-template-rows: repeat(2, 312px);
@@ -309,4 +311,9 @@ h1 {
     font-size: 14px;
     font-weight: 700;
     color: var(--aquamarine);
+}
+
+.block-bottom {
+    margin-bottom: 100px;
+    text-align: center;
 }
