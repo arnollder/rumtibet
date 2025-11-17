@@ -243,6 +243,9 @@ h1 {
     display: grid;
     grid-template-columns: repeat(2, 580px);
     grid-template-rows: repeat(2, 312px);
+
+    grid-column-gap: 20px;
+    grid-row-gap: 24px
 }
 
 .travel__content {
@@ -257,6 +260,8 @@ h1 {
 }
 
 .travel__img {
+    max-width: 188px;
+
     border-radius: 6px;
 }
 
