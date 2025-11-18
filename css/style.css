@@ -291,7 +291,7 @@ h1 {
 .travel__article {
     display: flex;
     flex-direction: column;
-
+    width: 294px;
 }
 
 .travel-bottom {
