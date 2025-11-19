@@ -144,6 +144,10 @@ h1 {
     color: var(--white);
 }
 
+.h1_mw390 {
+    display: none;
+}
+
 .h1__span {
     white-space: nowrap;
 }
