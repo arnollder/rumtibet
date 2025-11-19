@@ -129,6 +129,10 @@ a {
     font-weight: 600;
 }
 
+.header__menu-adapt {
+    display: none;
+}
+
 .header__special-item {
     padding-left: 25px;
 }
@@ -348,13 +352,33 @@ h1 {
     .header {
         margin-top: unset;
     }
-    .logo {
-        width: 84px;
-    }
-    .menu {
+    .menu__button {
         display: block;
         visibility: visible;
         opacity: 1;
+    }
+    .menu {
+        display: none;
+        padding: 50px 16px 331px 16px;
+
+        list-style-type: none;
+        background-color: var(--aquamarine);
+    }
+    .header__menu_hidden {
+        display: block;
+        /* padding: 50px 16px 331px 16px;
+
+        list-style-type: none;
+        background-color: var(--aquamarine); */
+    }
+    .header__menu_li {
+        padding-bottom: 16px;
+    }
+    .arrow-right {
+        margin-right: 8px;
+    }
+    .logo {
+        width: 84px;
     }
     .header__menu {
         display: none;
