@@ -36,10 +36,13 @@ a {
 }
 
 .background {
-    width: 1920px;
+    width: 100%;
 
     margin: auto;
     overflow: auto;
+
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .bg__header {
@@ -48,8 +51,8 @@ a {
 
 .bg__silver {
     background-color: var(--background-silver);
-
 }
+
 .container {
     margin: auto;
     width: 1180px;
@@ -73,6 +76,10 @@ a {
     font-weight: 800;
 
     text-align: center;
+}
+
+.cursor {
+    cursor: url(../img/cursor.svg), auto;
 }
 
 /* ======================== */
@@ -103,6 +110,9 @@ a {
     /* header */
 /* ======================== */
 
+.menu {
+    display: none;
+}
 
 .header{
     margin-top: 16px;
@@ -175,7 +185,7 @@ h1 {
     color: var(--white);
 
     outline: none;
-    cursor: pointer;
+    /* cursor: pointer; */
 
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -259,7 +269,7 @@ h1 {
     background-color: var(--white);
     border-radius: 10px;
 
-    cursor: pointer;
+    /* cursor: url(../img/cursor.svg), auto; */
 }
 
 .travel__img {
@@ -312,9 +322,54 @@ h1 {
     font-size: 14px;
     font-weight: 700;
     color: var(--aquamarine);
+
+    cursor: url(../img/cursor.svg), auto;
+
 }
 
 .block-bottom {
     margin-bottom: 100px;
     text-align: center;
+}
+
+@media  (max-width: 390px) {
+    .background {
+        background-size: cover;
+    }
+    .container {
+        margin: 0;
+        padding: 20px 16px 50px 16px;
+        width: 358px;
+    }
+    .header {
+        margin-top: unset;
+    }
+    .logo {
+        width: 84px;
+    }
+    .menu {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+    }
+    .header__menu {
+        display: none;
+    }
+    h1 {
+        display: none;
+    }
+    .h1_mw390 {
+        display: block;
+        margin-top: 234px;
+        font-size: 28px;
+    }
+    .find-program {
+        margin-top: 50px;
+        margin-bottom: unset;
+        padding: unset;
+        background: unset
+    }
+    .find-program__el {
+        display: none;
+    }
 }
