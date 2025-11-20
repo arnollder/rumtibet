@@ -23,8 +23,11 @@
             </li>     
           </ul>
 
-          <img class="menu__button" src="img/heroicons-solid_menu-alt-3.svg" alt="">
-          <ul class="menu header__menu_hidden">
+          <img onclick="openElement()" class="menu__button" src="img/heroicons-solid_menu-alt-3.svg" alt="">
+          <ul class="menu header__menu_hidden" id="header__menu_hidden">
+            <div class="header__menu_close">
+              <img class="header__menu_close-btn" onclick="hideElement()" src="img/close_icon.svg" alt="">
+            </div>
             <li class="header__menu_li"><a href="#"><img class="arrow-right" src="img/arrow-right.svg" alt="">Про гида</a></li>
             <li class="header__menu_li"><a href="#"><img class="arrow-right" src="img/arrow-right.svg" alt="">Программа тура</a></li>
             <li class="header__menu_li"><a href="#"><img class="arrow-right" src="img/arrow-right.svg" alt="">Стоимость</a></li>

@@ -347,7 +347,7 @@ h1 {
     .container {
         margin: 0;
         padding: 20px 16px 50px 16px;
-        width: 358px;
+        max-width: 358px;
     }
     .header {
         margin-top: unset;
@@ -365,11 +365,23 @@ h1 {
         background-color: var(--aquamarine);
     }
     .header__menu_hidden {
-        display: block;
-        /* padding: 50px 16px 331px 16px;
+        display: none;
 
-        list-style-type: none;
-        background-color: var(--aquamarine); */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vh;
+        height: 100vh;
+        
+        padding: 16px;
+    }
+    .header__menu_close {
+        display: flex;
+        width: 42vh;
+        justify-content: flex-end;
+    }
+    .header__menu_close-btn {
+        margin-top: 11px;
     }
     .header__menu_li {
         padding-bottom: 16px;
