@@ -365,7 +365,7 @@ h1 {
         background-color: var(--aquamarine);
     }
     .header__menu_hidden {
-        display: none;
+        display: block;
 
         position: fixed;
         top: 0;
