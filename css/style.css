@@ -340,7 +340,7 @@ h1 {
     text-align: center;
 }
 
-@media  (max-width: 390px) {
+@media  (max-width: 768px) {
     .background {
         background-size: cover;
     }
