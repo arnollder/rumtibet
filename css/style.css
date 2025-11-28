@@ -55,8 +55,12 @@ a {
 
 .container {
     margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh; /* или другая высота */
+
     padding: 20px 16px 50px 16px;
-    max-width: 358px;
 }
 
 .block-title {
@@ -168,13 +172,16 @@ a {
     /* body */
 /* ======================== */
 
+.main-content {
+    margin-top: auto;
+}
+
 h1 {
     display: none;
 }
 
 .h1_mw390 {
     display: block;
-    margin-top: 234px;
     font-family: 'NEXT_ART';
     font-size: 28px;
     color: var(--white);
